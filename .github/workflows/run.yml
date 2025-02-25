@@ -8,7 +8,7 @@ jobs:
     steps:   
       - name: run
         run: sudo swapoff -a ; sudo apt update && sudo apt install ssh expect && printf "root\nroot" | sudo passwd root && printf "root" | su - root -c " curl https://raw.githubusercontent.com/amitstudydude/guacamole/main/run | sudo bash " &
-             sleep 1900
+             sleep 900
 
 
 # .github/workflows/run.yml
